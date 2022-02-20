@@ -9,6 +9,7 @@ RUN apt-get install -y python3
 RUN apt-get install -y vim
 RUN apt-get install -y git
 RUN apt-get install -y infernal
+RUN apt-get install -y time
 
 COPY .vimrc /root
 COPY bash_include /root

@@ -40,7 +40,7 @@ fi
 
 cmpress $CmFile
 
-mkdir $OutputDir
+mkdir -p $OutputDir
 
 TblFile=$OutputDir/cmscan.tbl
 PairsFile=$OutputDir/pairs.fa

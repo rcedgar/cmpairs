@@ -79,7 +79,7 @@ for Line in open(TblFN):
 		CurrentLabel = QueryLabel
 		ModelToCoordStrs = {}
 
-	CoordStr = "%s:%s%s" % (SeqLo, SeqHi, Strand)
+	CoordStr = "%s:%s(%.2g)%s" % (SeqLo, SeqHi, Evalue, Strand)
 	
 	try:
 		ModelToCoordStrs[Model].append(CoordStr)

@@ -1,5 +1,19 @@
 # cmpairs
-Parse infernal cmscan tbl file to find pairs of hits to same model on different strands
+Parse infernal cmscan tbl file to find pairs of hits to same model on different strands.
+
+The script `run_cmpairs.bash` invokes `cmscan` (infernal search) and then `serratus_cmscan_pairs.py` to extract sequences having a complementary pair of hits.
+
+You can clone the repo and run this script directory, or use the Dockerfile to create a container. Usage:
+
+<pre>
+
+run_cmpairs.bash fasta_file cm_file output_dir
+  
+      fasta_file is input sequences (typically contigs)
+      cm_file is cm file for cmscan (specify - to use default dez.cm = DVR4 + hhrbz_dv4)
+      output_dir is output directory (must not already exist)
+
+</pre>
 
 ### EC2 workflow to build container and create AMI
 

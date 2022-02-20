@@ -1,0 +1,25 @@
+echo ==== This is $0
+
+bind "C-b:history-search-backward"
+bind "TAB:menu-complete"
+bind "C-f:beginning-of-line"
+
+if [ -f /root/.dockername ] ; then
+	DOCKERNAME=`cat /root/.dockername`
+else
+	DOCKERNAME=DOCK
+fi
+
+export LS_COLORS="di=31;1:ln=36;1:ex=31;1:*~=31;1:*.html=34;1:*.shtml=37;1"
+export PS1="[\u: docker ] \`pwd\`> "
+export BASH_INCLUDE=YES
+
+alias docker='sudo docker'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias l='ls --color=auto -lhtr'
+alias ll='ls --color=auto -lhtr'
+alias tx='tar -zxvf'
+alias less='less -X'
+alias grep='grep --color'

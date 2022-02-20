@@ -59,7 +59,7 @@ rm -f $OutputDir/cmscan.stderr
 ls -lh $TblFile
 echo Making $PairsFile
 
-python3 /cmscan/serratus_cmscan_pairs.py $TblFile $FastaFile \
+python3 /cmpairs/serratus_cmscan_pairs.py $TblFile $FastaFile \
   > $PairsFile \
   2> $OutputDir/serratus_cmscan_pairs.stderr
 

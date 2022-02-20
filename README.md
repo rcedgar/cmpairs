@@ -3,7 +3,7 @@ Parse infernal cmscan tbl file to find pairs of hits to same model on different 
 
 The script `run_cmpairs.bash` invokes `cmscan` (infernal search) and then `serratus_cmscan_pairs.py` to extract sequences having a complementary pair of hits.
 
-You can clone the repo and run this script directory, or use the Dockerfile to create a container. Usage:
+You can clone the repo and run this script directly, or use the `Dockerfile` to create a container. See `Dockerfile` for dependencies if you run directly. Usage:
 
 <pre>
 

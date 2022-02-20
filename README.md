@@ -17,7 +17,7 @@ run_cmpairs.bash fasta_file cm_file output_dir
 
 ### Output files
 
-There is a `cmscan` `tbl` file and a FASTA file with paired hits. The FASTA defline is updated with by appending a synopsis of the hits; here is an example:
+Output files are `cmscan.tbl` and `pairs.fa`. The FASTA defline is updated with by appending a synopsis of the hits; here is an example:
 
 <pre>
 >NODE_290297_length_631_cov_5.012545 cm=hhrbz_dv4/499:582(4.4e-16)+,312:230(5.3e-16)-;

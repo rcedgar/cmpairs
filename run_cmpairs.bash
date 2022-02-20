@@ -30,7 +30,7 @@ if [ -d $OutputDir ] ; then
 fi
 
 if [ $CmFile == - ] ; then
-	CmFile=dez.cm
+	CmFile=/cmpairs/dez.cm
 fi
 
 if [ ! -f $CmFile ] ; then

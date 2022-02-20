@@ -23,3 +23,7 @@ COPY bash_include /root
 
 RUN cat /root/bash_include >> /root/.profile
 RUN cat /root/bash_include >> /root/.bashrc
+
+RUN git clone https://github.com/rcedgar/cmpairs.git
+
+RUN chmod +x cmpairs/*.bash cmpairs/*.py

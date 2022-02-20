@@ -46,7 +46,8 @@ TblFile=$OutputDir/cmscan.tbl
 PairsFile=$OutputDir/pairs.fa
 
 echo Running cmscan
-cmscan \
+/bin/time -v -o $OutputDir/cmscan.time \
+  cmscan \
   -E $EVALUE \
   --tblout $TblFile \
   --cpu $THREADS \
